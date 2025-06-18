@@ -1,5 +1,6 @@
 const express = require('express')
 const jwt = require('jsonwebtoken')
+
 require('dotenv').config()
 
 const LoginModel = require('../models/userModel')
@@ -45,21 +46,24 @@ routes.post("/create/", async (req, res) => {
 })
 
 routes.post("/login/", async (req, res) => {
-    const {name, password} = req.body
+    
+    const {name} = req.body
+    const password = req.sanitize(req.body.password);
 
     const userExists = await LoginModel.findOne({name, password})
 
     if(!userExists) {
         return res.status(400).json({msg: 'Nome ou senha inválido(s)'})
     }
-
+    
     const secret = process.env.SECRET
     const token = jwt.sign({
         _id: userExists._id,
         name
     }, secret)
 
-    return res.status(200).json({msg: `${name} está logado(a)`, token})
+    return res.status(200).json({msg: `${name} está logado(a)`, token,
+    sanitized: password })
 })
 
 module.exports = routes
