@@ -1,0 +1,6 @@
+{"level":"info","message":"Request - Method: GET","service":"user-service","timestamp":"2025-06-19 20:24:36"}
+{"level":"info","message":"Login sucessful: - Method: POST","service":"user-service","timestamp":"2025-06-19 20:25:44"}
+{"level":"info","message":"Login sucessful: - Method: POST","service":"user-service","timestamp":"2025-06-19 20:25:49"}
+{"level":"info","message":"Request - Method: GET","service":"user-service","timestamp":"2025-06-19 20:30:08"}
+{"level":"info","message":"Request - Method: GET","service":"user-service","timestamp":"2025-06-19 20:30:10"}
+{"level":"info","message":"Request - Method: GET","service":"user-service","timestamp":"2025-06-19 20:30:10"}

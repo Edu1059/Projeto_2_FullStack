@@ -4,11 +4,13 @@ const bcrypt = require('bcrypt')
 
 require('dotenv').config()
 
-const LoginModel = require('../models/userModel')
-const redisClient = require('../config/cache')
+const LoginModel = require('../../models/userModel')
+const redisClient = require('../../config/cache')
 
-const { handleValidation } = require('../routes/handle')
-const validateLogin = require('../routes/validateLogin')
+const { handleValidation } = require('../handle')
+const validateLogin = require('./validateLogin')
+
+const {logger, errorLogger} = require('../../config/logger')
 
 const routes = express.Router()
 
@@ -17,6 +19,7 @@ routes.get("/", async (req, res) => {
     const cacheKey = 'logins'
     const cached = await redisClient.get(cacheKey);
 
+    logger.info(`Request - Method: ${req.method}`)
     if (cached) {
       return res.status(200).json(JSON.parse(cached));
     }
@@ -38,8 +41,10 @@ routes.post("/create/", validateLogin, handleValidation, async (req, res) => {
         const userExists = await LoginModel.findOne({name})
     
         if(userExists) {
+            errorLogger.error(`Falha ao criar usuário: Method: ${req.method}`)
             return res.status(400).json({msg: `Usuário ${name} já existe`})
         }
+
         const hashedPass = await bcrypt.hash(password, 10)
         
         await LoginModel.create({
@@ -48,10 +53,12 @@ routes.post("/create/", validateLogin, handleValidation, async (req, res) => {
         })
 
         await redisClient.del('logins');
-        
+
+        logger.info(`Usuário criado com sucesso - Method: ${req.method}`)
         return res.status(200).json({name, password})
         
     } catch (error) {
+        errorLogger.error(`Falha ao criar usuário: Method:${req.method}`)
         return res.status(500).json({err: 'Error! ' + error.message })
     }
 })
@@ -60,30 +67,38 @@ routes.post("/login/", async (req, res) => {
     
     const name = req.sanitize(req.body.name)
     const password = req.sanitize(req.body.password);
+    let logged = false
 
     try {
-
+        
         const userExists = await LoginModel.findOne({name})
-    
-        if(!userExists) {
-            return res.status(400).json({msg: 'Usuário não existe!'})
-        }
-        const hashConfirm = await bcrypt.compare(password, userExists.password)
 
-        if(!hashConfirm) {
-            return res.status(401).json({msg: 'Senha inválida!'})
-        } else {
+        if(!userExists) {
+            errorLogger.error(`Falha de login - Method: ${req.method}`);
+            return res.status(404).json({ msg: "Usuário não encontrado!" })
+        }
+
+        const hashConfirmPass = await bcrypt.compare(password, userExists.password)
+        
+        if (!hashConfirmPass) {
+            errorLogger.error(`Falha de login: ${req.method}`);
+            return res.status(400).json({msg: 'Credencial(is) inválida(s)!'})
+
+        }  else {
+            logged = true
             const secret = process.env.SECRET
             const token = jwt.sign({
                 _id: userExists._id,
-                name
+                name,
+                logged
             }, secret)
-        
+            logger.info(`Login sucessful: - Method: ${req.method}`)
             return res.status(200).json({msg: `${name} está logado(a)`, token})
         }
 
     } catch (error) {
-        return res.status(500).json({err: 'Erro ao inserir dados!'})
+        errorLogger.error(`Falha no servidor - Method: ${req.method}`);
+        return res.status(500).json({err: 'Erro ao inserir dados! ' + error.message})
     }
 })
 
