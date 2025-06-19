@@ -1,5 +1,6 @@
 const express = require('express')
 const jwt = require('jsonwebtoken')
+const bcrypt = require('bcrypt')
 
 require('dotenv').config()
 
@@ -24,7 +25,7 @@ routes.get("/", async (req, res) => {
     
     const logins = await LoginModel.find({})
     
-    await redisClient.setEx(cacheKey, 10, JSON.stringify(logins));
+    await redisClient.setEx(cacheKey, 300, JSON.stringify(logins));
 
     return res.status(200).json(logins)
 })
@@ -39,18 +40,19 @@ routes.post("/create/", validateLogin, handleValidation, async (req, res) => {
         if(userExists) {
             return res.status(400).json({msg: `Usuário ${name} já existe`})
         }
-    
+        const hashedPass = await bcrypt.hash(password, 10)
+        
         await LoginModel.create({
             name,
-            password
+            password: hashedPass
         })
-    
+
         await redisClient.del('logins');
         
         return res.status(200).json({name, password})
         
     } catch (error) {
-        return res.status(500).json({err: 'Erro ao inserir dados!'})
+        return res.status(500).json({err: 'Error! ' + error.message })
     }
 })
 
@@ -61,20 +63,25 @@ routes.post("/login/", async (req, res) => {
 
     try {
 
-        const userExists = await LoginModel.findOne({name, password})
+        const userExists = await LoginModel.findOne({name})
     
         if(!userExists) {
-            return res.status(400).json({msg: 'Nome ou senha inválido(s)'})
+            return res.status(400).json({msg: 'Usuário não existe!'})
         }
+        const hashConfirm = await bcrypt.compare(password, userExists.password)
+
+        if(!hashConfirm) {
+            return res.status(401).json({msg: 'Senha inválida!'})
+        } else {
+            const secret = process.env.SECRET
+            const token = jwt.sign({
+                _id: userExists._id,
+                name
+            }, secret)
         
-        const secret = process.env.SECRET
-        const token = jwt.sign({
-            _id: userExists._id,
-            name
-        }, secret)
-    
-        return res.status(200).json({msg: `${name} está logado(a)`, token})
-        
+            return res.status(200).json({msg: `${name} está logado(a)`, token})
+        }
+
     } catch (error) {
         return res.status(500).json({err: 'Erro ao inserir dados!'})
     }
