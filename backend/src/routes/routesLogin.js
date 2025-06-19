@@ -6,6 +6,9 @@ require('dotenv').config()
 const LoginModel = require('../models/userModel')
 const redisClient = require('../config/cache')
 
+const { handleValidation } = require('../routes/handle')
+const validateLogin = require('../routes/validateLogin')
+
 const routes = express.Router()
 
 routes.get("/", async (req, res) => {
@@ -26,7 +29,7 @@ routes.get("/", async (req, res) => {
     return res.status(200).json(logins)
 })
 
-routes.post("/create/", async (req, res) => {
+routes.post("/create/", validateLogin, handleValidation, async (req, res) => {
     
     try {
         
