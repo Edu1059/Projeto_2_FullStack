@@ -9,7 +9,7 @@ const logger = createLogger({
     ),
     defaultMeta: { service: 'user-service' },
     transports: [
-        new transports.File({ filename: 'combined.log' }),
+        new transports.File({ filename: 'events.log' }),
         new transports.Console()
     ],    
 });
@@ -23,7 +23,7 @@ const errorLogger = createLogger({
     ),
     defaultMeta: { service: 'user-service' },
     transports: [
-        new transports.File({ filename: 'error.log' }),
+        new transports.File({ filename: 'errors.log' }),
         new transports.Console()
     ], 
 })

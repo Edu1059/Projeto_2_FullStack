@@ -19,7 +19,7 @@ routes.get("/", async (req, res) => {
     const cacheKey = 'logins'
     const cached = await redisClient.get(cacheKey);
 
-    logger.info(`Request - Method: ${req.method}`)
+    logger.info(`Request - Method: ${req.method} | IP: ${req.ip}`)
     if (cached) {
       return res.status(200).json(JSON.parse(cached));
     }
@@ -41,7 +41,7 @@ routes.post("/create/", validateLogin, handleValidation, async (req, res) => {
         const userExists = await LoginModel.findOne({name})
     
         if(userExists) {
-            errorLogger.error(`Falha ao criar usuário: Method: ${req.method}`)
+            errorLogger.error(`Falha ao criar usuário: Method: ${req.method} | IP: ${req.ip}`)
             return res.status(400).json({msg: `Usuário ${name} já existe`})
         }
 
@@ -54,11 +54,11 @@ routes.post("/create/", validateLogin, handleValidation, async (req, res) => {
 
         await redisClient.del('logins');
 
-        logger.info(`Usuário criado com sucesso - Method: ${req.method}`)
+        logger.info(`Usuário criado com sucesso - Method: ${req.method} | IP: ${req.ip}`)
         return res.status(200).json({name, password})
         
     } catch (error) {
-        errorLogger.error(`Falha ao criar usuário: Method:${req.method}`)
+        errorLogger.error(`Falha ao criar usuário: Method:${req.method} | IP: ${req.ip}`)
         return res.status(500).json({err: 'Error! ' + error.message })
     }
 })
@@ -74,14 +74,14 @@ routes.post("/login/", async (req, res) => {
         const userExists = await LoginModel.findOne({name})
 
         if(!userExists) {
-            errorLogger.error(`Falha de login - Method: ${req.method}`);
+            errorLogger.error(`Falha de login - Method: ${req.method} | IP: ${req.ip}`);
             return res.status(404).json({ msg: "Usuário não encontrado!" })
         }
 
         const hashConfirmPass = await bcrypt.compare(password, userExists.password)
         
         if (!hashConfirmPass) {
-            errorLogger.error(`Falha de login: ${req.method}`);
+            errorLogger.error(`Falha de login: ${req.method} | IP: ${req.ip}`);
             return res.status(400).json({msg: 'Credencial(is) inválida(s)!'})
 
         }  else {
@@ -92,12 +92,12 @@ routes.post("/login/", async (req, res) => {
                 name,
                 logged
             }, secret)
-            logger.info(`Login sucessful: - Method: ${req.method}`)
+            logger.info(`Login sucessful: - Method: ${req.method} | IP: ${req.ip}`)
             return res.status(200).json({msg: `${name} está logado(a)`, token})
         }
 
     } catch (error) {
-        errorLogger.error(`Falha no servidor - Method: ${req.method}`);
+        errorLogger.error(`Falha no servidor - Method: ${req.method} | IP: ${req.ip}`);
         return res.status(500).json({err: 'Erro ao inserir dados! ' + error.message})
     }
 })
