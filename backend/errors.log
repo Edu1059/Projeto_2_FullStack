@@ -1,2 +1,29 @@
 {"level":"error","message":"Falha ao criar usuário: Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-19 20:46:17"}
 {"level":"error","message":"Falha de login - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-19 20:46:34"}
+{"level":"error","message":"Falha ao criar usuário: Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:10:36"}
+{"level":"error","message":"Falha ao criar usuário: Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:10:53"}
+{"level":"error","message":"Falha de login - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:12:59"}
+{"level":"error","message":"Falha de login: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:13:10"}
+{"level":"error","message":"Falha de login: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:16:16"}
+{"level":"error","message":"Falha de login: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:16:46"}
+{"level":"error","message":"Falha de login: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:17:07"}
+{"level":"error","message":"Falha de login: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:17:13"}
+{"level":"error","message":"Falha de login: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:18:26"}
+{"level":"error","message":"Falha de login - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:18:39"}
+{"level":"error","message":"Falha de login: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:21:17"}
+{"level":"error","message":"Falha no servidor - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:22:05"}
+{"level":"error","message":"Falha no servidor - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:22:08"}
+{"level":"error","message":"Falha no servidor - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:24:36"}
+{"level":"error","message":"Falha ao criar usuário: Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:25:08"}
+{"level":"error","message":"Falha no servidor - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:25:49"}
+{"level":"error","message":"Falha no servidor - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:25:52"}
+{"level":"error","message":"Falha no servidor - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:25:57"}
+{"level":"error","message":"Falha no servidor - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:26:23"}
+{"level":"error","message":"Falha de login - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:31:24"}
+{"level":"error","message":"Falha de login - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:32:48"}
+{"level":"error","message":"Falha de login - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:33:49"}
+{"level":"error","message":"Falha de login - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:36:00"}
+{"level":"error","message":"Falha de login: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:36:23"}
+{"level":"error","message":"Falha de login - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:18:55"}
+{"level":"error","message":"Falha ao criar usuário: Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:18:58"}
+{"level":"error","message":"Falha ao criar usuário: Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:19:02"}

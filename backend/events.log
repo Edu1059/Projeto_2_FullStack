@@ -1,2 +1,130 @@
 {"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-19 20:46:07"}
 {"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-19 20:46:27"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:03:31"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:03:49"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:03:52"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:04:02"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:04:03"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:04:41"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:05:01"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:05:31"}
+{"level":"info","message":"Usuário criado com sucesso - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:10:30"}
+{"level":"info","message":"Usuário criado com sucesso - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:11:00"}
+{"level":"info","message":"Usuário criado com sucesso - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:11:26"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:12:41"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:15:04"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:15:08"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:15:21"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:17:19"}
+{"level":"info","message":"Usuário criado com sucesso - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:19:38"}
+{"level":"info","message":"Usuário criado com sucesso - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:25:15"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:25:19"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:26:23"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:26:38"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-20 12:27:17"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:28:53"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:31:04"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:31:16"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:31:50"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:33:23"}
+{"level":"info","message":"Usuário criado com sucesso - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:34:23"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:34:41"}
+{"level":"info","message":"Usuário criado com sucesso - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:35:43"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:35:52"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:35:56"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:36:31"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:38:30"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:38:38"}
+{"level":"info","message":"Usuário criado com sucesso - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:38:46"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:38:53"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:38:53"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:38:58"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:38:58"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:39:00"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:39:01"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:39:02"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:39:04"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:39:04"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:39:04"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:39:05"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:39:05"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:39:06"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:58:02"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:58:45"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:58:52"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:58:53"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:58:54"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:58:59"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 12:59:01"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 13:04:24"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 13:04:24"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 13:04:48"}
+{"level":"info","message":"Usuário criado com sucesso - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 13:05:47"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 13:06:47"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 13:07:05"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 13:07:48"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 13:07:57"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 13:08:32"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-20 13:08:33"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 11:51:48"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:29:24"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:29:27"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:29:29"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:30:24"}
+{"level":"info","message":"Dados inseridos com sucesso - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:30:28"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:30:31"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:46:42"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:46:43"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:47:14"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:47:21"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:47:44"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:48:02"}
+{"level":"info","message":"Dados inseridos com sucesso - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:48:10"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:48:13"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:49:25"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:58:17"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:58:24"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:58:42"}
+{"level":"info","message":"Dados inseridos com sucesso - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:59:03"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-21 23:59:06"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:00:09"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:00:44"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:08:16"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:08:17"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:08:18"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:08:20"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:08:21"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:08:26"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:08:41"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:08:43"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:08:48"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:09:02"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:09:03"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:09:04"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:09:05"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:09:05"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:09:06"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:09:06"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:09:07"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:09:07"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:09:08"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:09:09"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:09:10"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:09:10"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:10:01"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:10:49"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:12:14"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:12:47"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:12:56"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:17:24"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:17:29"}
+{"level":"info","message":"Usuário criado com sucesso - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:18:45"}
+{"level":"info","message":"Request - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:18:50"}
+{"level":"info","message":"Login sucessful: - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:19:13"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:19:29"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:19:33"}
+{"level":"info","message":"Dados inseridos com sucesso - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:19:43"}
+{"level":"info","message":"Dados inseridos com sucesso - Method: POST | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:19:49"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:19:54"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:19:56"}
+{"level":"info","message":"Request Naruto - Method: GET | IP: ::ffff:127.0.0.1","service":"user-service","timestamp":"2025-06-22 00:19:57"}

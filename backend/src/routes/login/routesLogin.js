@@ -6,26 +6,24 @@ require('dotenv').config()
 
 const LoginModel = require('../../models/userModel')
 const redisClient = require('../../config/cache')
-
 const { handleValidation } = require('../handle')
 const validateLogin = require('./validateLogin')
-
 const {logger, errorLogger} = require('../../config/logger')
 
 const routes = express.Router()
 
-routes.get("/", async (req, res) => {
+routes.get("/users", async (req, res) => {
 
     const cacheKey = 'logins'
     const cached = await redisClient.get(cacheKey);
 
     logger.info(`Request - Method: ${req.method} | IP: ${req.ip}`)
+
     if (cached) {
       return res.status(200).json(JSON.parse(cached));
     }
 
-    console.log("Consultando o banco de dados...")
-    
+    console.log("Consultando o banco de dados do login...")
     const logins = await LoginModel.find({})
     
     await redisClient.setEx(cacheKey, 300, JSON.stringify(logins));
@@ -67,12 +65,11 @@ routes.post("/login/", async (req, res) => {
     
     const name = req.sanitize(req.body.name)
     const password = req.sanitize(req.body.password);
-    let logged = false
 
     try {
         
         const userExists = await LoginModel.findOne({name})
-
+        let logged = false
         if(!userExists) {
             errorLogger.error(`Falha de login - Method: ${req.method} | IP: ${req.ip}`);
             return res.status(404).json({ msg: "Usuário não encontrado!" })
@@ -84,14 +81,15 @@ routes.post("/login/", async (req, res) => {
             errorLogger.error(`Falha de login: ${req.method} | IP: ${req.ip}`);
             return res.status(400).json({msg: 'Credencial(is) inválida(s)!'})
 
-        }  else {
+        } else {
             logged = true
             const secret = process.env.SECRET
             const token = jwt.sign({
                 _id: userExists._id,
                 name,
-                logged
+                logged: true
             }, secret)
+            
             logger.info(`Login sucessful: - Method: ${req.method} | IP: ${req.ip}`)
             return res.status(200).json({msg: `${name} está logado(a)`, token})
         }

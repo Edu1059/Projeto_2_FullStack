@@ -6,6 +6,8 @@ const bodyParser = require('body-parser')
 const compression = require('compression')
 
 const routesLogin = require('./src/routes/login/routesLogin')
+const routesNaruto = require('./src/routes/naruto/routesNaruto')
+const tokenAuth = require('./src/routes/tokenAutenticate')
 
 require('./src/config/conn')
 
@@ -21,6 +23,7 @@ app.use(express.json())
 app.use(bodyParser.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.use(expressSanitizer(), routesLogin)
+app.use('/home', expressSanitizer(), routesLogin)
+app.use('/naruto', tokenAuth.tokenValido, routesNaruto)
 
 module.exports = app
