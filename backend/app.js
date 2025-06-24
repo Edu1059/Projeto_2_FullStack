@@ -14,7 +14,7 @@ require('./src/config/conn')
 const app = express()
 
 app.use(cors({
-    origin: 'https://localhost:3000'
+    origin: 'http://localhost:5173'
 }))
 
 app.use(morgan('dev'))

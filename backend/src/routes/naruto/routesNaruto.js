@@ -8,7 +8,7 @@ const {logger, errorLogger} = require('../../config/logger')
 
 const routes = express.Router()
 
-routes.get("/", async (req, res) => {
+routes.get("/data", async (req, res) => {
     
     const cacheKey = 'naruto'
     const cached = await redisClient.get(cacheKey)
