@@ -88,7 +88,9 @@ routes.post("/login/", async (req, res) => {
                 _id: userExists._id,
                 name,
                 logged: true
-            }, secret)
+            }, secret, {
+                expiresIn: '7d'
+            })
             
             logger.info(`Login sucessful: - Method: ${req.method} | IP: ${req.ip}`)
             return res.status(200).json({msg: `${name} está logado(a)`, token})

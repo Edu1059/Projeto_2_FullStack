@@ -43,3 +43,16 @@
 {"level":"error","message":"Falha de login - Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-23 23:09:10"}
 {"level":"error","message":"Falha de login: POST | IP: ::1","service":"user-service","timestamp":"2025-06-23 23:09:17"}
 {"level":"error","message":"Falha ao criar usuário: Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-24 00:39:33"}
+{"level":"error","message":"Falha ao criar usuário: Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-24 00:58:14"}
+{"level":"error","message":"Falha de login - Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-24 00:59:54"}
+{"level":"error","message":"Falha de login - Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-24 01:00:02"}
+{"level":"error","message":"Falha de login - Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-24 01:00:08"}
+{"level":"error","message":"Falha de login - Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-24 01:40:14"}
+{"level":"error","message":"Falha ao criar usuário: Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-24 12:07:23"}
+{"level":"error","message":"Falha ao criar usuário: Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-24 12:07:31"}
+{"level":"error","message":"Falha ao criar usuário: Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-24 12:07:39"}
+{"level":"error","message":"Falha ao criar usuário: Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-24 12:41:07"}
+{"level":"error","message":"Falha ao criar usuário: Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-24 12:41:09"}
+{"level":"error","message":"Falha ao criar usuário: Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-24 12:41:09"}
+{"level":"error","message":"Falha ao criar usuário: Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-24 12:41:10"}
+{"level":"error","message":"Falha ao criar usuário: Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-24 12:41:21"}

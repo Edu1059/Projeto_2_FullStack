@@ -1,0 +1,39 @@
+.form-naruto {
+    background-image: url('../Images/pergaminho.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 25%;
+    text-align: center;
+}
+
+.form-naruto input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 40%;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    background-color: rgb(240, 202, 78);
+}
+
+.form-naruto button {
+    color: red;
+    background-color:rgb(243, 187, 4);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.form-naruto button:hover {
+    background-color:rgb(239, 243, 4);
+}
+
+h3 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3em;
+    color: orangered;
+    text-shadow: 2px 1px 1px black;
+    text-align: center;
+}
