@@ -5,6 +5,7 @@ import api from '../../../services/axios.js'
 
 export default function Home () {
     const [erro, setErro] = useState('')
+    const [sucesso, setSucesso] = useState('')
     const inputName = useRef()
     const inputPassword = useRef()
 
@@ -15,7 +16,10 @@ export default function Home () {
                 name: inputName.current.value,
                 password: inputPassword.current.value
             })
+            setSucesso("Usuário criado com sucesso!")
+            setErro('')
         } catch (error) {
+            setSucesso('')
             setErro(error.response.data.msg)
         }
     }
@@ -26,11 +30,12 @@ export default function Home () {
                 <h1>Criar usuário</h1>
                 <input type="text" name="Nome" placeholder='Digite seu nome...' ref={inputName}/><br />
                 <input type="password" name="Senha" placeholder='Digite sua senha...'ref={inputPassword}/><br />                
-                <Link to="/home/login">Voltar para o login</Link><br />
+                <Link to="/home/login">Ir para o Login</Link><br />
                 <button type="button" onClick={createUsers}>Cadastrar</button><br />
+                <Link to="/">Voltar para a página inicial</Link>
+                {erro && <p style={{color: 'red'}}>{erro}</p>}
+                {sucesso && <p style={{color: 'green', fontWeight: 'bold'}}>{sucesso}</p>}
             </form>
-            {erro && <p style={{color: 'red'}}>{erro}</p>}
-            
         </div>
     );
 }

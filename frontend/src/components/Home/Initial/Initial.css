@@ -1,0 +1,27 @@
+.home {
+    margin: 15% 0%;
+}
+
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+    color: orangered;
+    font-size: 6em;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+}
+
+.links {
+    text-align: center;
+}
+
+#button-login, #button-create {
+    background-color: rgb(247, 163, 8);
+    margin: 0 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 1% 5%;
+}
+
+#button-login:hover, #button-create:hover {
+    background-color: rgb(241, 200, 17)
+}

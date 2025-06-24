@@ -31,7 +31,8 @@ export default function Login () {
                 <input type="password" name="Senha" placeholder='Digite sua senha...'ref={inputPassword}/><br />
                 <Link to="/home/create">Não tem cadastro ?</Link><br />
                 {erro && <p style={{color: 'red'}}>{erro}</p>}
-                <button type="button" onClick={inputLogin}>Entrar</button>
+                <button type="button" onClick={inputLogin}>Entrar</button><br />
+                <Link to="/">Voltar para a página inicial</Link><br />
             </form>
         </div>
     )

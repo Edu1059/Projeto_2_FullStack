@@ -42,3 +42,4 @@
 {"level":"error","message":"Falha de login - Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-23 22:59:25"}
 {"level":"error","message":"Falha de login - Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-23 23:09:10"}
 {"level":"error","message":"Falha de login: POST | IP: ::1","service":"user-service","timestamp":"2025-06-23 23:09:17"}
+{"level":"error","message":"Falha ao criar usuário: Method: POST | IP: ::1","service":"user-service","timestamp":"2025-06-24 00:39:33"}
