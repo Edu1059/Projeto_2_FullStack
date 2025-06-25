@@ -32,7 +32,7 @@ export default function GetNaruto() {
 
     return (
         <div className="form-get">
-            <h1>Busca de dados</h1>
+            <h1>Busca - Personagens</h1>
             <input type="text" placeholder='Pesquise pelo nome...' value={name} onChange={e => setName(e.target.value)}/>
             <button type='button' onClick={getNaruto}>Pesquisar</button><br />
             {erro && <p>{erro}</p>}
@@ -40,7 +40,8 @@ export default function GetNaruto() {
             {sucesso && (
                 <div className="resultado">
                     <h3>Nome: {sucesso.msg.name}</h3>
-                    <p>Categoria: {sucesso.msg.category}</p>
+                    <p>Jutsu: {sucesso.msg.jutsu}</p>
+                    <p>Vila: {sucesso.msg.village}</p>
                 </div>
             )}
             

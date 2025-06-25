@@ -8,25 +8,6 @@ const {logger, errorLogger} = require('../../config/logger')
 
 const routes = express.Router()
 
-// routes.get("/data", async (req, res) => {
-    
-//     const cacheKey = 'naruto'
-//     const cached = await redisClient.get(cacheKey)
-
-//     logger.info(`Request Naruto - Method: ${req.method} | IP: ${req.ip}`)
-
-//     if (cached) {
-//       return res.status(200).json(JSON.parse(cached));
-//     }
-
-//     console.log("Consultando o banco de dados do Naruto...")
-//     const data = await NarutoModel.find({})
-
-//     await redisClient.setEx(cacheKey, 300, JSON.stringify(data));
-
-//     return res.status(200).json({ msg: data})
-// })
-
 routes.get("/data/:name", async (req, res) => {
     
     try {
@@ -40,14 +21,15 @@ routes.get("/data/:name", async (req, res) => {
             return res.status(200).json({msg: resultado})
         }
 
-        console.log("Consultando o banco de dados do Naruto...")
+        console.log(`Consultando o banco de dados do Naruto: ${name}...`)
         const data = await NarutoModel.findOne({name: name})
         
         if(!data) {
+            logger.info(`Request Naruto NOT FOUND - Method: ${req.method} ${name} | IP: ${req.ip}`)
             return res.status(404).json({msg: `${name} não encontrado!`})
         }
 
-        logger.info(`Request Naruto - Method: ${req.method} | IP: ${req.ip}`)
+        logger.info(`Request Naruto OK - Method: ${req.method} ${name} | IP: ${req.ip}`)
         await redisClient.setEx(cacheKey, 300, JSON.stringify(data));
         
         return res.status(200).json({ msg: data})
@@ -58,7 +40,7 @@ routes.get("/data/:name", async (req, res) => {
 
 routes.post("/create", validateNaruto, handleValidation, async (req, res) => {
 
-    const { name, category } = req.body
+    const { name, jutsu, village } = req.body
 
     try {
         
@@ -69,7 +51,8 @@ routes.post("/create", validateNaruto, handleValidation, async (req, res) => {
         
         await NarutoModel.create({
             name,
-            category
+            jutsu, 
+            village
         })
         
         await redisClient.del('naruto');

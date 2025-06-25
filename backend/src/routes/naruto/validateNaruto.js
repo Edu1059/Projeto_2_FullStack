@@ -5,7 +5,8 @@ const validateNaruto = [
         .trim()
         .notEmpty()
         .withMessage('Nome não pode ser vazio!'),
-    body('category').notEmpty().withMessage('Selecione uma categoria!'),
+    body('jutsu').trim().notEmpty().withMessage('Jutsu não pode ser vazio!'),
+    body('village').trim().notEmpty().withMessage('Vila não pode ser vazia!'),
 ]
 
 module.exports = validateNaruto
