@@ -8,34 +8,48 @@ const {logger, errorLogger} = require('../../config/logger')
 
 const routes = express.Router()
 
-routes.get("/data", async (req, res) => {
+// routes.get("/data", async (req, res) => {
     
-    const cacheKey = 'naruto'
-    const cached = await redisClient.get(cacheKey)
+//     const cacheKey = 'naruto'
+//     const cached = await redisClient.get(cacheKey)
 
-    logger.info(`Request Naruto - Method: ${req.method} | IP: ${req.ip}`)
+//     logger.info(`Request Naruto - Method: ${req.method} | IP: ${req.ip}`)
 
-    if (cached) {
-      return res.status(200).json(JSON.parse(cached));
-    }
+//     if (cached) {
+//       return res.status(200).json(JSON.parse(cached));
+//     }
 
-    console.log("Consultando o banco de dados do Naruto...")
-    const data = await NarutoModel.find({})
+//     console.log("Consultando o banco de dados do Naruto...")
+//     const data = await NarutoModel.find({})
 
-    await redisClient.setEx(cacheKey, 300, JSON.stringify(data));
+//     await redisClient.setEx(cacheKey, 300, JSON.stringify(data));
 
-    return res.status(200).json({ msg: data})
-})
+//     return res.status(200).json({ msg: data})
+// })
 
-routes.get("/:name", async (req, res) => {
+routes.get("/data/:name", async (req, res) => {
     
     try {
         const {name} = req.params
+        const cacheKey = `naruto:${name.toLocaleLowerCase()}`
+        
+        const cached = await redisClient.get(cacheKey)
+
+        if(cached) {
+            const resultado = JSON.parse(cached)
+            return res.status(200).json({msg: resultado})
+        }
+
+        console.log("Consultando o banco de dados do Naruto...")
         const data = await NarutoModel.findOne({name: name})
+        
         if(!data) {
             return res.status(404).json({msg: `${name} não encontrado!`})
         }
 
+        logger.info(`Request Naruto - Method: ${req.method} | IP: ${req.ip}`)
+        await redisClient.setEx(cacheKey, 300, JSON.stringify(data));
+        
         return res.status(200).json({ msg: data})
     } catch (error) {
         return res.status(500).json({msg: error.message})

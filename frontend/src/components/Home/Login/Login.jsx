@@ -35,7 +35,7 @@ export default function Login () {
 
                 <Link to="/home/create">Não tem uma conta ? Cadastre-se</Link><br />
 
-                {erro && <p style={{color: 'red'}}>{erro}</p>}
+                {erro && <p style={{color: 'red'}}>❌{erro}</p>}
                 <button type="button" onClick={inputLogin}>Entrar</button><br />
                 
                 <Link to="/">Voltar para a página inicial</Link><br />

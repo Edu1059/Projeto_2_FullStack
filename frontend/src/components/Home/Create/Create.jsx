@@ -37,8 +37,8 @@ export default function Home () {
 
                 <Link to="/">Voltar para a página inicial</Link>
 
-                {erro && <p style={{color: 'red', fontWeight: 'bold', margin: '10px 0 0 0'}}>{erro}</p>}
-                {sucesso && <p style={{color: 'green', fontWeight: 'bold', margin: '10px 0 0 0'}}>{sucesso}</p>}
+                {erro && <p style={{color: 'red', fontSize: '25px'}}>❌{erro}</p>}
+                {sucesso && <p style={{color: 'green', fontSize: '25px'}}>✅{sucesso}</p>}
             </form>
         </div>
     );
