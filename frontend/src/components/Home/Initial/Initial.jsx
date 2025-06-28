@@ -12,13 +12,13 @@ export default function Initial () {
                     <Link to="/home/login" style={{ 
                         textDecoration: 'none',
                         color: '#000000' 
-                    }}>Ir para o Login</Link><br />
+                    }}>Fazer login</Link><br />
                 </button>
                 <button id='button-create'>
                     <Link to="/home/create" style={{ 
                         textDecoration: 'none',
                         color: '#000000' 
-                    }}>Ir para o Create</Link>
+                    }}>Criar usuário</Link>
                 </button>
             </div>
         </div>

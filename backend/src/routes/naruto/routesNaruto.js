@@ -18,6 +18,7 @@ routes.get("/data/:name", async (req, res) => {
 
         if(cached) {
             const resultado = JSON.parse(cached)
+            console.log(`Guardado no Redis: ${name}`)
             return res.status(200).json({msg: resultado})
         }
 

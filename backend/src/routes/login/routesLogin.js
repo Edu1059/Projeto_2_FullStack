@@ -12,25 +12,6 @@ const {logger, errorLogger} = require('../../config/logger')
 
 const routes = express.Router()
 
-routes.get("/users", async (req, res) => {
-
-    const cacheKey = 'logins'
-    const cached = await redisClient.get(cacheKey);
-
-    logger.info(`Request - Method: ${req.method} | IP: ${req.ip}`)
-
-    if (cached) {
-      return res.status(200).json(JSON.parse(cached));
-    }
-
-    console.log("Consultando o banco de dados do login...")
-    const logins = await LoginModel.find({})
-    
-    await redisClient.setEx(cacheKey, 300, JSON.stringify(logins));
-
-    return res.status(200).json(logins)
-})
-
 routes.post("/create/", validateLogin, handleValidation, async (req, res) => {
     
     try {
@@ -89,7 +70,7 @@ routes.post("/login/", async (req, res) => {
                 name,
                 logged: true
             }, secret, {
-                expiresIn: '7d'
+                expiresIn: '10min'
             })
             
             logger.info(`Login sucessful: - Method: ${req.method} | IP: ${req.ip}`)
